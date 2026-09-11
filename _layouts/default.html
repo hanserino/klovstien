@@ -38,6 +38,7 @@
         <nav class="footer-nav" aria-label="Bunnmeny">
           <a href="{{ '/' | relative_url }}">Forside</a>
           <a href="{{ '/historie/' | relative_url }}">Historie</a>
+          <a href="{{ '/bilder/' | relative_url }}">Bilder</a>
           <a href="{{ '/resultater/' | relative_url }}">Resultater</a>
           {% for year in site.race.years %}
             <a href="{{ '/resultater/' | append: year | append: '/' | relative_url }}">{{ year }}</a>
@@ -51,6 +52,10 @@
       </footer>
     </div>
     <script src="{{ '/assets/js/nav.js' | relative_url }}" defer></script>
+    {% if page.gallery %}
+    {% include lightbox.html %}
+    <script src="{{ '/assets/js/gallery.js' | relative_url }}" defer></script>
+    {% endif %}
     {% if page.map %}
     <script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.2/dist/maplibre-gl.js" defer></script>
     <script>

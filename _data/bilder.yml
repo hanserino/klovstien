@@ -1,0 +1,58 @@
+# Løpsbilder: nyeste år øverst. Legg filene i assets/images/lop/<år>/ og list dem her.
+# Tekst med kolon (f.eks. Foto:) må stå i hermetegn.
+lop:
+  - year: 2026
+    note: Tredje utgave. Bilder kommer etter løpet 18. oktober.
+    bilder: []
+  - year: 2025
+    note: Andre utgave. Dobling av antall deltakere!
+    bilder:
+      - src: /assets/images/lop/2025/start.jpg
+        caption: "En håpefull gjeng før det braker løs."
+      - src: /assets/images/lop/2025/parkering.jpg
+      - src: /assets/images/lop/2025/isterdalen2.jpg
+      - src: /assets/images/lop/2025/helene.jpg
+        alt: En sliten Helene Birkeli.
+        caption: "En sliten Helene Birkeli."
+      - src: /assets/images/lop/2025/skilt.jpg
+
+  - year: 2024
+    note: Første utgave. Tre deltakere.
+    bilder:
+      - src: /assets/images/lop/2024/tristan-start.jpg
+        alt: Tristan gjør seg klar til start.
+        caption: "Tristan gjør seg klar til start."
+      - src: /assets/images/lop/2024/kilian.jpg
+        alt: Kilian på vei innover Isterdalen mot Kløvstien.
+        caption: "Kilian på vei innover Isterdalen mot Kløvstien."
+      - src: /assets/images/lop/2024/tristan-2.jpg
+        alt: På vei tilbake til Åndalsnes etter å ha blitt stanset av en veiarbeider ved Stigfossen.
+        caption: "På vei tilbake til Åndalsnes etter å ha blitt stanset av en veiarbeider ved Stigfossen."
+
+sted:
+  - src: /assets/images/personlige-bilder/1.jpeg
+  - src: /assets/images/personlige-bilder/2.jpeg
+  - src: /assets/images/personlige-bilder/3.jpeg
+  - src: /assets/images/personlige-bilder/4.jpeg
+  - src: /assets/images/personlige-bilder/5.jpeg
+  - src: /assets/images/personlige-bilder/6.jpeg
+  - src: /assets/images/personlige-bilder/7.jpeg
+  - src: /assets/images/personlige-bilder/8.jpeg
+  - src: /assets/images/personlige-bilder/9.jpeg
+  - src: /assets/images/personlige-bilder/10.jpeg
+  - src: /assets/images/personlige-bilder/11.jpeg
+  - src: /assets/images/personlige-bilder/12.jpeg
+  - src: /assets/images/personlige-bilder/13.jpeg
+  - src: /assets/images/personlige-bilder/14.jpeg
+  - src: /assets/images/personlige-bilder/15.jpeg
+  - src: /assets/images/personlige-bilder/16.jpeg
+  - src: /assets/images/personlige-bilder/17.jpeg
+  - src: /assets/images/personlige-bilder/18.jpeg
+  - src: /assets/images/personlige-bilder/19.jpeg
+  - src: /assets/images/personlige-bilder/20.jpeg
+  - src: /assets/images/personlige-bilder/21.jpeg
+  - src: /assets/images/personlige-bilder/22.jpeg
+  - src: /assets/images/personlige-bilder/23.jpeg
+  - src: /assets/images/personlige-bilder/24.jpeg
+  - src: /assets/images/personlige-bilder/25.jpeg
+  - src: /assets/images/personlige-bilder/26.jpeg

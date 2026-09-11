@@ -81,6 +81,12 @@
           "position": 2,
           "name": "Historie",
           "item": {{ canonical | jsonify }}
+        }{% elsif page.url == '/bilder/' %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Bilder",
+          "item": {{ canonical | jsonify }}
         }{% endif %}
       ]
     }{% endunless %}

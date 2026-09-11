@@ -912,7 +912,7 @@ a:hover {
   background: var(--ink);
 }
 
-.timeline li {
+.timeline > li {
   display: grid;
   grid-template-columns: 5.4rem 1.35rem 1fr;
   column-gap: 0;
@@ -920,7 +920,7 @@ a:hover {
   padding: 0 0 1.45rem;
 }
 
-.timeline li:last-child {
+.timeline > li:last-child {
   padding-bottom: 0;
 }
 
@@ -944,10 +944,198 @@ a:hover {
   z-index: 1;
 }
 
-.timeline li p:last-child {
+.timeline > li p:last-child {
   margin: 0;
   padding: 0.05rem 0 0 0.85rem;
   color: var(--ink);
+}
+
+.photo-timeline {
+  margin-bottom: 3.2rem;
+}
+
+.photo-year {
+  min-width: 0;
+  padding: 0.05rem 0 0.2rem 0.85rem;
+}
+
+.photo-year .empty-results {
+  margin: 0;
+  padding: 0.15rem 0 0.35rem;
+}
+
+.gallery-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12.5rem), 1fr));
+  gap: 0.55rem;
+}
+
+.gallery-grid > li {
+  display: block;
+  padding: 0;
+  min-width: 0;
+}
+
+.photo-year .gallery-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.gallery-thumb {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 3px solid var(--ink);
+  background: #cfc3a4;
+  cursor: zoom-in;
+  color: inherit;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(255, 210, 0, 0.35);
+}
+
+.gallery-thumb img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.gallery-thumb:hover,
+.gallery-thumb:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 0;
+}
+
+.gallery-grid--arkiv .gallery-thumb img {
+  filter: contrast(1.06) saturate(0.85);
+}
+
+.sted-gallery {
+  padding-top: 0.4rem;
+}
+
+.sted-gallery .gallery-grid {
+  margin: 1.2rem 0 0;
+}
+
+.sted-gallery .sources {
+  margin-top: 1.6rem;
+}
+
+.lightbox {
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: rgba(17, 17, 17, 0.96);
+  color: var(--paper);
+  overscroll-behavior: contain;
+}
+
+.lightbox::backdrop {
+  background: #111;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  font-family: var(--cond);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: 2px solid var(--ink);
+  background: var(--yellow);
+  color: var(--ink);
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+}
+
+.lightbox-close:hover {
+  background: var(--paper);
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 3rem;
+  height: 3rem;
+  margin-top: -1.5rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.lightbox-nav svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.lightbox-prev {
+  left: 0.6rem;
+}
+
+.lightbox-next {
+  right: 0.6rem;
+}
+
+.lightbox-nav:hover {
+  color: var(--paper);
+}
+
+.lightbox-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 4.6rem 4.4rem 5.2rem;
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: calc(100vh - 9.5rem);
+  max-height: calc(100dvh - 9.5rem);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border: 3px solid var(--paper);
+  background: #1c1c1c;
+}
+
+.lightbox-caption,
+.lightbox-counter {
+  font-family: var(--cond);
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin: 0;
+}
+
+.lightbox-caption {
+  margin-top: 0.85rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  max-width: 40rem;
+}
+
+.lightbox-counter {
+  margin-top: 0.35rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 232, 0.62);
 }
 
 .sources {
@@ -1154,7 +1342,7 @@ table.results .is-dnf td:last-child {
     left: calc(0.36rem - 1px);
   }
 
-  .timeline li {
+  .timeline > li {
     grid-template-columns: 0.72rem 1fr;
     padding-bottom: 1.35rem;
   }
@@ -1169,8 +1357,63 @@ table.results .is-dnf td:last-child {
     margin-top: 0.32rem;
   }
 
-  .timeline li p:last-child {
+  .timeline > li p:last-child {
     padding-left: 0.7rem;
+  }
+
+  .photo-timeline li {
+    padding-bottom: 1.7rem;
+  }
+
+  .photo-year {
+    padding: 0.55rem 0 0;
+  }
+
+  .photo-year .gallery-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.4rem;
+  }
+
+  .sted-gallery .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.45rem;
+  }
+
+  .lightbox-frame {
+    padding: 4.4rem 0.7rem 5.4rem;
+    padding-top: max(4.4rem, calc(env(safe-area-inset-top) + 3.2rem));
+    padding-bottom: max(5.4rem, calc(env(safe-area-inset-bottom) + 3.6rem));
+  }
+
+  .lightbox-image {
+    max-width: calc(100vw - 1.4rem);
+    max-height: calc(100dvh - 10rem);
+    border-width: 2px;
+  }
+
+  .lightbox-nav {
+    width: 2.8rem;
+    height: 3.2rem;
+    margin-top: -1.6rem;
+  }
+
+  .lightbox-prev {
+    left: 0.15rem;
+  }
+
+  .lightbox-next {
+    right: 0.15rem;
+  }
+
+  .lightbox-close {
+    top: max(0.7rem, env(safe-area-inset-top));
+    right: max(0.7rem, env(safe-area-inset-right));
+    min-height: 2.75rem;
+    min-width: 2.75rem;
+  }
+
+  .lightbox-caption {
+    padding: 0 0.8rem;
   }
 }
 

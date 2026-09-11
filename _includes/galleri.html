@@ -1,0 +1,23 @@
+<ul class="gallery-grid{% if include.modifier %} {{ include.modifier }}{% endif %}">
+  {% for foto in include.items %}
+    <li>
+      <button
+        type="button"
+        class="gallery-thumb"
+        data-gallery="{{ include.gallery_id }}"
+        data-index="{{ forloop.index0 }}"
+        data-src="{{ foto.src | relative_url }}"
+        data-alt="{{ foto.alt | escape }}"
+        data-caption="{{ foto.caption | escape }}"
+        aria-label="Vis i fullskjerm: {{ foto.alt | escape }}"
+      >
+        <img
+          src="{{ foto.src | relative_url }}"
+          alt=""
+          loading="{% if include.eager and forloop.first %}eager{% else %}lazy{% endif %}"
+          decoding="async"
+        >
+      </button>
+    </li>
+  {% endfor %}
+</ul>

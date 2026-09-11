@@ -38,7 +38,7 @@ permalink: /historie/
     <li>
       <p class="timeline-year">1028</p>
       <span class="timeline-mark" aria-hidden="true"></span>
-      <p>Olav Haraldsson drar gjennom Valldal på flukt mot Lesja. Snorre skriver det ned to hundre år senere. Det er den ferden — ikke kløvvegen ned til Devold.</p>
+      <p>Olav Haraldsson drar gjennom Valldal på flukt mot Lesja. Snorre skriver det ned to hundre år senere. Det er den ferden — ikke kløvvegen ned til Devold som blir nevnt.</p>
     </li>
     <li>
       <p class="timeline-year">1533</p>

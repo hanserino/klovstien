@@ -114,7 +114,7 @@
     function hideOnProfile() {
       hoverLine.setAttribute("opacity", "0");
       hoverDot.setAttribute("opacity", "0");
-      if (readout) readout.textContent = "Dalbunn, så vegg.";
+      if (readout) readout.textContent = "Bort, bort, og opp!";
     }
 
     profileCtrl = {
@@ -379,7 +379,7 @@
   function setFlyButton(active) {
     var btn = document.getElementById("fly-course");
     if (!btn) return;
-    btn.textContent = active ? "Stopp" : "Følg løypa";
+    btn.textContent = active ? "Stopp" : "Fly gjennom";
   }
 
   function stopFly() {

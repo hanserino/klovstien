@@ -21,6 +21,7 @@
   <nav id="nav" class="nav" aria-label="Hovedmeny">
     <a class="nav-link{% if current == '/' %} is-active{% endif %}" href="{{ '/' | relative_url }}">Forside</a>
     <a class="nav-link{% if current == '/historie/' %} is-active{% endif %}" href="{{ '/historie/' | relative_url }}">Historie</a>
+    <a class="nav-link{% if current == '/bilder/' %} is-active{% endif %}" href="{{ '/bilder/' | relative_url }}">Bilder</a>
 
     <details class="nav-drop"{% if current contains '/resultater' %} open{% endif %}>
       <summary>Resultater</summary>
