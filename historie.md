@@ -17,7 +17,7 @@ permalink: /historie/
 
   <h2>Hva betyr navnet?</h2>
   <p>En <em>kløv</em> er lasten som festes over ryggen på hesten. En kløvsti er altså en arbeidsveg, ikke en tursti: smal nok for dyr, bratt nok til at den måtte hogges inn i fjellet.</p>
-  <p>Over Stigfjellet, mellom Valldal på Sunnmøre og Åndalsnes i Romsdalen, har folk ferdes i uminnelige tider. I Snorre fortelles det om vegen over fjellet og ned til garden Devold. Der ble den årlige Romsdalsmartnan holdt. For valldalingene var overgangen adgang til marked, kyr, hester og handel.</p>
+  <p>Over Stigfjellet, mellom Valldal på Sunnmøre og Åndalsnes i Romsdalen, har folk ferdes i uminnelige tider. I Snorre heter det at Olav den hellige gikk gjennom Valldal i 1028, på flukt mot Lesja. Kløvvegen ned Isterdalen til garden Devold er en annen åre: der ble den årlige Romsdalsmartnan holdt, dokumentert fra 1533. For valldalingene var overgangen adgang til marked, kyr, hester og handel.</p>
 
   <figure class="arkiv">
     <img src="{{ '/assets/images/arkiv/isterdalen.jpg' | relative_url }}" width="1920" height="2559" alt="En kvinne sitter på et svaberg høyt over Isterdalen, med elva og den grønne dalbunnen langt der nede." loading="lazy" decoding="async">
@@ -36,9 +36,14 @@ permalink: /historie/
   <h2>Tidslinje</h2>
   <ol class="timeline">
     <li>
-      <p class="timeline-year">Snorre</p>
+      <p class="timeline-year">1028</p>
       <span class="timeline-mark" aria-hidden="true"></span>
-      <p>Ferdsel over Stigfjellet omtales i sagalitteraturen. Romsdalsmartnan på Devold bandt Valldal og Romsdalen sammen.</p>
+      <p>Olav Haraldsson drar gjennom Valldal på flukt mot Lesja. Snorre skriver det ned to hundre år senere. Det er den ferden — ikke kløvvegen ned til Devold.</p>
+    </li>
+    <li>
+      <p class="timeline-year">1533</p>
+      <span class="timeline-mark" aria-hidden="true"></span>
+      <p>Romsdalsmartnan på Devold er først dokumentert. For valldalingene var kløvvegen over Stigfjellet adgang til marked, kyr, hester og handel.</p>
     </li>
     <li>
       <p class="timeline-year">1776</p>
