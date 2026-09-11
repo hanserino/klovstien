@@ -1,0 +1,30 @@
+title: Kløvstien Open
+description: Årlig time trial fra Åndalsnes sentrum til Trollstigplatået. Ikke et offisielt arrangement.
+url: https://klovstien.no
+baseurl: ""
+lang: nb-NO
+timezone: Europe/Oslo
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules
+  - Kløvstien_Open_2025.gpx
+
+race:
+  name: Kløvstien Open
+  year: 2026
+  date_iso: "2026-10-18"
+  date_display: Søndag 18. oktober 2026
+  time: "10:00"
+  distance: 17 km
+  elevation: 875 høydemeter
+  start: Åndalsnes sentrum
+  finish: Trollstigplatået
+  registration_url: https://www.fjelldatabasen.no/
+  registration_label: Fjelldatabasen.no
+  years: [2026, 2025, 2024]

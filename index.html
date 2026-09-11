@@ -1,0 +1,80 @@
+---
+layout: default
+title: Kløvstien Open
+description: Årlig time trial fra Åndalsnes sentrum til Trollstigplatået. Søndag 18. oktober 2026 kl. 10:00.
+map: true
+body_class: home
+---
+
+<article>
+  <header class="hero">
+    <p class="hero-tape">Åndalsnes - Trollstigplatået · 2026</p>
+    <h1>
+      <span class="hero-word">Kløvstien</span>
+      <span class="hero-script">Open</span>
+    </h1>
+    <div class="hero-chevrons" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+    <p class="lede">Fra Åndalsnes sentrum til kafeen på Trollstigplatået — flatt, så bratt.</p>
+
+    <div class="chrono">
+      <div class="chrono-clock">
+        <span class="chrono-time">{{ site.race.time }}</span>
+        <span class="chrono-label">Start</span>
+      </div>
+      <p class="chrono-date">{{ site.race.date_display }}<br>III. utgave</p>
+    </div>
+
+    <div class="hero-actions">
+      <a class="btn" href="{{ site.race.registration_url }}" rel="noopener noreferrer">Påmelding hos Fjelldatabasen</a>
+      <a class="btn btn-ghost" href="{{ '/historie/' | relative_url }}">Historien</a>
+    </div>
+
+    <dl class="stats">
+      <div class="stat">
+        <dt>Distanse</dt>
+        <dd>{{ site.race.distance }}</dd>
+      </div>
+      <div class="stat">
+        <dt>Stigning</dt>
+        <dd>875 hm</dd>
+      </div>
+      <div class="stat">
+        <dt>Parcours</dt>
+        <dd>Åndalsnes
+          <span class="stat-note">→ Trollstigplatået</span>
+        </dd>
+      </div>
+    </dl>
+  </header>
+
+  <section class="section" aria-labelledby="kart-tittel">
+    <h2 id="kart-tittel">Løypa</h2>
+    <p class="section-intro">Start ved togstasjonen. Mål ved kafeen på Trollstigplatået.</p>
+    <div class="map-frame">
+      <div id="map" role="application" aria-label="3D-kart over løypa"></div>
+      <div class="map-tools">
+        <button class="btn" type="button" id="fly-course">Følg løypa</button>
+        <button class="btn" type="button" id="reset-map">Oversikt</button>
+      </div>
+    </div>
+    <p class="map-caption">Løypa er tegnet fra GPX-sporet. <a href="{{ '/assets/data/klovstien-open.gpx' | relative_url }}">Last ned GPX</a>.</p>
+  </section>
+
+  <section class="section" aria-labelledby="profil-tittel">
+    <h2 id="profil-tittel">Høydeprofil</h2>
+    <p class="section-intro">Tretten kilometer i dalbunnen før man gyver løs på 800 høydemeter rett opp til Trollstigplatået. </p>
+    <div class="profile-wrap">
+      <svg id="profile" class="profile-svg" viewBox="0 0 1000 280" role="img" aria-label="Høydeprofil for løypa fra Åndalsnes til Trollstigplatået"></svg>
+      <p id="profile-readout" class="profile-readout">Flatt, så bratt.</p>
+    </div>
+  </section>
+
+  <section class="section prose">
+    <h2>Deg mot klokka</h2>
+    <p>Kløvstien Open er ikke et offisielt idrettsarrangement. Det er en årlig sesongavslutning hvor du kan måle deg selv mot deg selv året før. Du løper på eget ansvar, og tiden tas via <a href="{{ site.race.registration_url }}" rel="noopener noreferrer">Fjelldatabasen</a>. Ingen startnummer. Ingen premier. Ingen påmeldingsavgift.Bare stien, klokka, og blodsmak i munnen.</p>
+    <p>Løpet har blitt arrangert i <a href="{{ '/resultater/2024' | relative_url }}">2024</a> og <a href="{{ '/resultater/2025' | relative_url }}">2025</a>, og går for tredje gang {{ site.race.date_display | downcase }}, med start kl. {{ site.race.time }} i Åndalsnes sentrum. Målet er toppen av Trollstigplatået, ved kafeen.</p>
+    <p>Trollstigvegen har en tendens til å være stengt så sent i sesongen, så ikke belag deg på å bli kjørt ned. Ta med det du trenger, sjekk værmelding, og vis hensyn til stien som har båret folk og fe i århundrer.</p>
+  </section>
+</article>

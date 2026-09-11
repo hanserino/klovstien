@@ -1,0 +1,46 @@
+{% assign year = page.year %}
+{% assign year_key = year | append: "" %}
+{% assign data = site.data.resultater[year_key] %}
+{% if data == nil %}
+  {% assign data = site.data.resultater[year] %}
+{% endif %}
+
+<article class="prose">
+  <p class="badge kicker">Palmarès</p>
+  <h1>Resultater {{ year }}</h1>
+  <p class="lede">{{ data.ingress }}</p>
+
+  {% if data.status == 'kommende' %}
+    <p class="notice">{{ site.race.date_display }} kl. {{ site.race.time }}. Påmelding og tidtaking hos <a href="{{ site.race.registration_url }}" rel="noopener noreferrer">{{ site.race.registration_label }}</a>. Listen her oppdateres etter løpet.</p>
+  {% else %}
+  {% endif %}
+
+  {% if data.entries and data.entries.size > 0 %}
+    <div class="table-wrap">
+      <table class="results">
+        <thead>
+          <tr>
+            <th>Plass</th>
+            <th>Navn</th>
+            <th>Tid</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in data.entries %}
+            <tr{% if row.tid == 'DNF' or row.tid == 'Ukjent' %} class="is-dnf"{% endif %}>
+              <td>{{ row.plass }}</td>
+              <td>
+                {{ row.navn }}
+                {% if row.rekord %}<span class="record-flag">Løyperekord</span>{% endif %}
+                {% if row.merknad %}<span class="result-note">{{ row.merknad }}</span>{% endif %}
+              </td>
+              <td>{{ row.tid }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% else %}
+    <p class="empty-results">Ingen tider er publisert her ennå. Når listen er klar, kommer den på denne siden. Fram til da er Fjelldatabasen stedet for påmelding og tidtaking.</p>
+  {% endif %}
+</article>

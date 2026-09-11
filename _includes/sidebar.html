@@ -1,0 +1,41 @@
+{% assign current = page.url | replace: 'index.html', '' %}
+<aside class="sidebar" id="meny">
+  <div class="sidebar-top">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 72 22" fill="currentColor">
+          <path d="M2 2 L16 11 L2 20 Z"/>
+          <path d="M22 2 L36 11 L22 20 Z"/>
+          <path d="M42 2 L56 11 L42 20 Z"/>
+        </svg>
+      </span>
+      <span class="brand-name">Kløvstien</span>
+      <span class="brand-sub">Open</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">
+      <span class="menu-toggle-label">Meny</span>
+      <span class="menu-toggle-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <nav id="nav" class="nav" aria-label="Hovedmeny">
+    <a class="nav-link{% if current == '/' %} is-active{% endif %}" href="{{ '/' | relative_url }}">Forside</a>
+    <a class="nav-link{% if current == '/historie/' %} is-active{% endif %}" href="{{ '/historie/' | relative_url }}">Historie</a>
+
+    <details class="nav-drop"{% if current contains '/resultater' %} open{% endif %}>
+      <summary>Resultater</summary>
+      <div class="nav-drop-list">
+        {% for year in site.race.years %}
+          {% assign year_path = '/resultater/' | append: year | append: '/' %}
+          <a class="nav-link nav-sub{% if current == year_path %} is-active{% endif %}" href="{{ year_path | relative_url }}">{{ year }}</a>
+        {% endfor %}
+      </div>
+    </details>
+  </nav>
+
+  <div class="sidebar-foot">
+    <p class="sidebar-kicker">Chrono</p>
+    <p class="sidebar-date">{{ site.race.date_display }}<br>kl. {{ site.race.time }}</p>
+    <a class="btn btn-sidebar" href="{{ site.race.registration_url }}" rel="noopener noreferrer">Påmelding</a>
+  </div>
+</aside>

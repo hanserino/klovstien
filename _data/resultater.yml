@@ -1,0 +1,47 @@
+2024:
+  title: "2024"
+  status: arkiv
+  ingress: Første utgave. Tre startende. Trollstigvegen var stengt for rassikring, og veiarbeidet ved Stigfossen stoppet alle unntatt én.
+  entries:
+    - plass: 1
+      navn: Kilian Jornet
+      tid: "1:27"
+      rekord: true
+    - plass: "—"
+      navn: Hans Kristian Smedsrød Engdahl
+      tid: Force majeure - DNF
+      merknad: Stoppet ved Stigfossen etter 1:23 pga veiarbeid
+    - plass: "—"
+      navn: Tristan Hauff
+      tid: Force majeure - DNF
+      merknad: Stoppet ved Stigfossen pga veiarbeid
+
+2025:
+  title: "2025"
+  status: arkiv
+  ingress: Andre utgave. Seks startende. Løypa gikk i sin helhet på sti, etter at Terje Hole kloppet partiet mellom Åkessetra og Bøsetra.
+  entries:
+    - plass: 1
+      navn: Hans Kristian Smedsrød Engdahl
+      tid: "1:34:59"
+    - plass: 2
+      navn: Helene Birkeli
+      tid: "1:44:30"
+    - plass: 3
+      navn: Ingeborg Winther Mykjåland
+      tid: "1:46:15"
+    - plass: 4
+      navn: Lars Tore Lesteberg
+      tid: Ukjent
+    - plass: 5
+      navn: Sverre Kjerpeset
+      tid: "1:50:16"
+    - plass: 6
+      navn: Vegard Lund Fosland
+      tid: "1:52:22"
+
+2026:
+  title: "2026"
+  status: kommende
+  ingress: Tredje utgave. Søndag 18. oktober kl. 10:00. Resultatlisten publiseres her etter løpet.
+  entries: []
