@@ -7,7 +7,7 @@ body_class: home
 ---
 
 <article>
-  <header class="hero">
+  <header class="hero" style="--hero-image: url('{{ '/assets/images/personlige-bilder/6.jpeg' | relative_url }}')">
     <p class="hero-tape">Åndalsnes - Trollstigplatået · 2026</p>
     <h1>
       <span class="hero-word">Kløvstien</span>
@@ -48,6 +48,13 @@ body_class: home
       </div>
     </dl>
   </header>
+  
+  <section class="section prose">
+    <h2>Dette er Kløvstien Open</h2>
+    <p>Kløvstien Open er ikke et offisielt idrettsarrangement. Det er en årlig manndomsprøve på tampen av sesongen hvor du kan skvise ut det du har igjen av jus på i beina. Tiden blir loggført ved hjelp av <a href="{{ site.race.registration_url }}" rel="noopener noreferrer">Fjelldatabasen</a> via Strava, så du er selv ansvarlig for å starte og stoppe klokka. Det er ingen startnummer, ingen premier og ingen påmeldingsavgift.</p>
+    <p>NB! Trollstigvegen har en tendens til å være stengt så sent på sesongen, så ikke belag deg på å bli kjørt ned. I 2025 satt noen av oss biler ved Kløvstien-parkeringen og jogget sammen ned dit etter løpet mens noen jogget helt tilbake til start. Dette funket bra.</p>
+    <p>Sjekk værmelding, ta med det du trenger og vis hensyn til stien som har båret folk og fe i århundrer.</p>
+  </section>
 
   <section class="section" aria-labelledby="kart-tittel">
     <h2 id="kart-tittel">Løypa</h2>
@@ -72,10 +79,4 @@ body_class: home
     </p>
   </section>
 
-  <section class="section prose">
-    <h2>Dette er Kløvstien Open</h2>
-    <p>Kløvstien Open er ikke et offisielt idrettsarrangement. Det er en årlig sesongavslutning hvor du kan måle deg selv opp mot deg selv året før. Du løper på eget ansvar, og tiden tas via <a href="{{ site.race.registration_url }}" rel="noopener noreferrer">Fjelldatabasen</a> via Strava. Ingen startnummer. Ingen premier. Ingen påmeldingsavgift. Bare stien, klokka, og blodsmak i munnen.</p>
-    <p>Løpet har blitt arrangert i <a href="{{ '/resultater/2024' | relative_url }}">2024</a> og <a href="{{ '/resultater/2025' | relative_url }}">2025</a>, og går for tredje gang {{ site.race.date_display | downcase }}, med start kl. {{ site.race.time }} i Åndalsnes sentrum.</p>
-    <p>NB! Trollstigvegen har en tendens til å være stengt så sent i sesongen, så ikke belag deg på å bli kjørt ned. Ta med det du trenger, sjekk værmelding, og vis hensyn til stien som har båret folk og fe i århundrer.</p>
-  </section>
 </article>
