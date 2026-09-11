@@ -539,7 +539,7 @@ a:hover {
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 1.1rem 1.6rem;
-  margin: 0 0 1.6rem;
+  margin: 3rem 0;
 }
 
 .chrono-clock {
