@@ -1362,12 +1362,6 @@ table.results .is-dnf td:last-child {
     padding-right: 1.15rem;
   }
 
-  .home .hero-tape,
-  .home .hero h1,
-  .home .hero-chevrons {
-    display: none;
-  }
-
   .split {
     grid-template-columns: 1fr;
   }

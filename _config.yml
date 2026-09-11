@@ -1,6 +1,6 @@
 title: Kløvstien Open
 tagline: Time trial fra Åndalsnes til Trollstigplatået
-description: Årlig uoffisielt stiløp fra Åndalsnes sentrum til Trollstigplatået. 17 km og 875 høydemeter. Neste løp søndag 18. oktober 2026 kl. 10:00.
+description: Årlig uoffisielt stiløp fra Åndalsnes sentrum til Trollstigplatået. 17 km og 875 høydemeter. Neste løp lørdag 17. oktober 2026 kl. 10:00.
 url: https://klovstien.no
 baseurl: ""
 lang: nb-NO
@@ -36,8 +36,8 @@ defaults:
 race:
   name: Kløvstien Open
   year: 2026
-  date_iso: "2026-10-18"
-  date_display: Søndag 18. oktober 2026
+  date_iso: "2026-10-17"
+  date_display: Lørdag 17. oktober 2026
   time: "10:00"
   distance: 17 km
   elevation: 875 høydemeter
