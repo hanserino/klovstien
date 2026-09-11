@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Historie
-description: Kløvstien er den gamle kløvvegen mellom Romsdal og Sunnmøre. En ferdselsåre for folk, hester og kyr — lenge før Trollstigvegen.
+title: Historien til Kløvstien
+description: Historien til Kløvstien, den gamle kløvvegen mellom Romsdal og Sunnmøre — og bakgrunnen for stiløpet Kløvstien Open fra Åndalsnes til Trollstigplatået.
 permalink: /historie/
 ---
 
@@ -11,7 +11,7 @@ permalink: /historie/
   <p class="lede">Kløvstien ble bygd for å frakte varer mellom Romsdalen og Valldal med kløv — last på hesteryggen. Da Trollstigvegen åpnet i 1936, ble det mindre bruk for den. Stien er likevel i god behold, og brukes i dag av turgåere, løpere og turister.</p>
 
   <figure class="arkiv">
-    <img src="{{ '/assets/images/arkiv/trollstigen-isterdalen.jpg' | relative_url }}" width="1400" height="1300" alt="Isterdalen sett fra Trollstigvegen, med steinmur i forgrunnen og dalen som åpner seg mot Romsdalen.">
+    <img src="{{ '/assets/images/arkiv/trollstigen-isterdalen.jpg' | relative_url }}" width="1920" height="1781" alt="Isterdalen sett fra Trollstigvegen, med steinmur i forgrunnen og dalen som åpner seg mot Romsdalen." fetchpriority="high">
     <figcaption>Isterdalen sett fra stigen. Nasjonalbiblioteket / Mittet &amp; Co., før 1959. Public domain.</figcaption>
   </figure>
 
@@ -20,7 +20,7 @@ permalink: /historie/
   <p>Over Stigfjellet, mellom Valldal på Sunnmøre og Åndalsnes i Romsdalen, har folk ferdes i uminnelige tider. I Snorre fortelles det om vegen over fjellet og ned til garden Devold. Der ble den årlige Romsdalsmartnan holdt. For valldalingene var overgangen adgang til marked, kyr, hester og handel.</p>
 
   <figure class="arkiv">
-    <img src="{{ '/assets/images/arkiv/isterdalen.jpg' | relative_url }}" width="1400" height="1865" alt="En kvinne sitter på et svaberg høyt over Isterdalen, med elva og den grønne dalbunnen langt der nede.">
+    <img src="{{ '/assets/images/arkiv/isterdalen.jpg' | relative_url }}" width="1920" height="2559" alt="En kvinne sitter på et svaberg høyt over Isterdalen, med elva og den grønne dalbunnen langt der nede." loading="lazy" decoding="async">
     <figcaption>Isterdalen under seg. Nasjonalbiblioteket, Wilse-samlingen, før 1962. Public domain.</figcaption>
   </figure>
 
@@ -29,7 +29,7 @@ permalink: /historie/
   <p>Vegen svinger. Stien tar den korteste, bratteste linja. De møtes etter brua over fossen, og igjen like under kanten ved Stigrøra. Derfor ser løypeprofilen til Kløvstien Open ut som den gjør: nesten flatt fra Åndalsnes, så veggen. Der det i dag er kjetting og sherpatrapp, gikk det før hester med last.</p>
 
   <figure class="arkiv">
-    <img src="{{ '/assets/images/arkiv/isterdalen-fra-stigen.jpg' | relative_url }}" width="1400" height="1300" alt="To turgåere med sekk går nedover den gamle vegen, med Isterdalen åpen foran dem.">
+    <img src="{{ '/assets/images/arkiv/isterdalen-fra-stigen.jpg' | relative_url }}" width="1920" height="1775" alt="To turgåere med sekk går nedover den gamle vegen, med Isterdalen åpen foran dem." loading="lazy" decoding="async">
     <figcaption>Ned mot dalen. Nasjonalbiblioteket / Mittet &amp; Co. Public domain.</figcaption>
   </figure>
 
@@ -98,7 +98,7 @@ permalink: /historie/
   </ol>
 
   <figure class="arkiv">
-    <img src="{{ '/assets/images/arkiv/trollstigvegen.jpg' | relative_url }}" width="1400" height="1017" alt="Trollstigvegen i hårnålssvinger under Stigfossen, med Bispen og Kongen i bakgrunnen.">
+    <img src="{{ '/assets/images/arkiv/trollstigvegen.jpg' | relative_url }}" width="1920" height="1396" alt="Trollstigvegen i hårnålssvinger under Stigfossen, med Bispen og Kongen i bakgrunnen." loading="lazy" decoding="async">
     <figcaption>Trollstigvegen, 1948–49. Vegen svinger. Kløvstien tar linja opp langs fossen. Nasjonalbiblioteket. Public domain.</figcaption>
   </figure>
 
@@ -108,11 +108,11 @@ permalink: /historie/
 
   <div class="split">
     <figure class="arkiv">
-      <img src="{{ '/assets/images/arkiv/bispen.jpg' | relative_url }}" width="1400" height="1865" alt="Bispen reiser seg over de gamle trehusene på fjellet, med snø i liene.">
+      <img src="{{ '/assets/images/arkiv/bispen.jpg' | relative_url }}" width="1920" height="2422" alt="Bispen reiser seg over de gamle trehusene på fjellet, med snø i liene." loading="lazy" decoding="async">
       <figcaption>Bispen over bebyggelsen på fjellet. Nasjonalbiblioteket. Public domain.</figcaption>
     </figure>
     <figure class="arkiv">
-      <img src="{{ '/assets/images/arkiv/trollstigheimen.jpg' | relative_url }}" width="1400" height="1400" alt="Hjørnet av en tømmerbygning på Trollstigheimen, med snødekte fjell og vann i bakgrunnen.">
+      <img src="{{ '/assets/images/arkiv/trollstigheimen.jpg' | relative_url }}" width="1920" height="1920" alt="Hjørnet av en tømmerbygning på Trollstigheimen, med snødekte fjell og vann i bakgrunnen." loading="lazy" decoding="async">
       <figcaption>Trollstigheimen, før raset i 1963. Nasjonalbiblioteket. Public domain.</figcaption>
     </figure>
   </div>

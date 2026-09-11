@@ -27,7 +27,7 @@
         </thead>
         <tbody>
           {% for row in data.entries %}
-            <tr{% if row.tid == 'DNF' or row.tid == 'Ukjent' %} class="is-dnf"{% endif %}>
+            <tr{% if row.tid contains 'DNF' or row.tid == 'Ukjent' %} class="is-dnf"{% endif %}>
               <td>{{ row.plass }}</td>
               <td>
                 {{ row.navn }}

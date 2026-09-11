@@ -1,12 +1,21 @@
 title: Kløvstien Open
-description: Årlig time trial fra Åndalsnes sentrum til Trollstigplatået. Ikke et offisielt arrangement.
+tagline: Time trial fra Åndalsnes til Trollstigplatået
+description: Årlig uoffisielt stiløp fra Åndalsnes sentrum til Trollstigplatået. 17 km og 875 høydemeter. Neste løp søndag 18. oktober 2026 kl. 10:00.
 url: https://klovstien.no
 baseurl: ""
 lang: nb-NO
 timezone: Europe/Oslo
+title_separator: " · "
+logo: /assets/apple-touch-icon.png
+author:
+  name: Hans Kristian Smedsrød Engdahl
+  email: hans@naerdetalvor.no
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -14,6 +23,15 @@ exclude:
   - vendor
   - node_modules
   - Kløvstien_Open_2025.gpx
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/images/og.jpg
+        width: 1200
+        height: 630
+        alt: Trollstigvegen under Stigfossen i Isterdalen.
 
 race:
   name: Kløvstien Open

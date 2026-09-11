@@ -1,0 +1,90 @@
+{% unless page.sitemap == false %}
+{% assign canonical = page.url | absolute_url %}
+{% assign og_image = '/assets/images/og.jpg' | absolute_url %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SportsEvent",
+      "@id": "{{ site.url }}/#event-{{ site.race.year }}",
+      "name": {{ site.race.name | append: ' ' | append: site.race.year | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "url": {{ site.url | jsonify }},
+      "image": {{ og_image | jsonify }},
+      "sport": "Trail running",
+      "startDate": "{{ site.race.date_iso }}T{{ site.race.time }}:00+02:00",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "isAccessibleForFree": true,
+      "inLanguage": "nb-NO",
+      "location": {
+        "@type": "Place",
+        "name": {{ site.race.start | jsonify }},
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Åndalsnes",
+          "addressRegion": "Møre og Romsdal",
+          "postalCode": "6300",
+          "addressCountry": "NO"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 62.567,
+          "longitude": 7.687
+        }
+      },
+      "organizer": {
+        "@type": "Person",
+        "name": {{ site.author.name | jsonify }},
+        "email": {{ site.author.email | jsonify }},
+        "url": {{ site.url | jsonify }}
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "Påmelding",
+        "url": {{ site.race.registration_url | jsonify }},
+        "price": 0,
+        "priceCurrency": "NOK",
+        "availability": "https://schema.org/InStock"
+      }
+    }{% unless page.body_class == 'home' %},
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Forside",
+          "item": {{ site.url | append: '/' | jsonify }}
+        }{% if page.year %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Resultater",
+          "item": {{ '/resultater/' | absolute_url | jsonify }}
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": {{ page.year | append: '' | jsonify }},
+          "item": {{ canonical | jsonify }}
+        }{% elsif page.url == '/resultater/' %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Resultater",
+          "item": {{ canonical | jsonify }}
+        }{% elsif page.url == '/historie/' %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Historie",
+          "item": {{ canonical | jsonify }}
+        }{% endif %}
+      ]
+    }{% endunless %}
+  ]
+}
+</script>
+{% endunless %}

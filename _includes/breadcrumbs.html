@@ -1,0 +1,15 @@
+{% unless page.body_class == 'home' or page.sitemap == false %}
+<nav class="crumbs" aria-label="Du er her">
+  <ol>
+    <li><a href="{{ '/' | relative_url }}">Forside</a></li>
+    {% if page.year %}
+      <li><a href="{{ '/resultater/' | relative_url }}">Resultater</a></li>
+      <li aria-current="page">{{ page.year }}</li>
+    {% elsif page.url == '/resultater/' %}
+      <li aria-current="page">Resultater</li>
+    {% elsif page.url == '/historie/' %}
+      <li aria-current="page">Historie</li>
+    {% endif %}
+  </ol>
+</nav>
+{% endunless %}

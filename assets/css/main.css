@@ -302,17 +302,19 @@ a:hover {
   background: var(--yellow);
   padding: 0.72rem 1.2rem;
   min-height: 2.75rem;
-  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+  box-shadow: 5px 5px 0 var(--ink);
 }
 
 .btn:hover {
   background: var(--ink);
   border-color: var(--ink);
   color: var(--yellow);
+  box-shadow: 2px 2px 0 var(--ink);
+  transform: translate(3px, 3px);
 }
 
 .btn-ghost {
-  background: transparent;
+  background: var(--paper);
   color: var(--ink);
   border-color: var(--ink);
 }
@@ -361,6 +363,70 @@ a:hover {
 
 .site-footer p {
   margin: 0.85rem 0 0;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.1rem;
+  margin: 0 0 1rem;
+  font-family: var(--cond);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  text-underline-offset: 0.18em;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+}
+
+.crumbs {
+  font-family: var(--cond);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0 0 1.5rem;
+}
+
+.crumbs ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.15rem;
+}
+
+.crumbs li {
+  display: flex;
+  align-items: center;
+}
+
+.crumbs li:not(:last-child)::after {
+  content: "/";
+  margin: 0 0.55rem;
+  color: var(--ink-soft);
+}
+
+.crumbs a {
+  text-decoration: none;
+}
+
+.crumbs a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+}
+
+.crumbs [aria-current="page"] {
+  color: var(--ink-soft);
 }
 
 .footer-credit {
@@ -478,13 +544,13 @@ a:hover {
 
 .chrono-clock {
   display: grid;
-  place-content: center;
-  min-width: 9.5rem;
-  padding: 0.85rem 1.1rem 0.75rem;
-  background: var(--yellow);
-  border: 4px solid var(--ink);
-  box-shadow: 8px 8px 0 var(--ink);
-  text-align: center;
+  align-content: center;
+  justify-items: stretch;
+  min-width: 0;
+  padding: 0;
+  background: none;
+  border: 0;
+  text-align: left;
 }
 
 .chrono-time {
@@ -502,6 +568,9 @@ a:hover {
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--ink);
+  margin-top: 0.4rem;
+  padding-top: 0.35rem;
+  border-top: 3px solid var(--yellow);
 }
 
 .chrono-date {
@@ -520,6 +589,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+  padding-bottom: 0.35rem;
 }
 
 .stats {
@@ -539,14 +609,6 @@ a:hover {
 
 .stat:last-child {
   border-right: 0;
-}
-
-.stat:nth-child(1) {
-  background: var(--yellow);
-}
-
-.stat:nth-child(1) dt {
-  color: var(--ink);
 }
 
 .stat dt {
@@ -1024,13 +1086,30 @@ table.results .is-dnf td:last-child {
     padding-top: 2rem;
   }
 
-  .hero-word {
-    font-size: clamp(2.8rem, 16vw, 4.4rem);
+  .home .hero-tape,
+  .home .hero h1,
+  .home .hero-chevrons {
+    display: none;
   }
 
-  .stats,
   .split {
     grid-template-columns: 1fr;
+  }
+
+  .stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .stat {
+    padding: 0.75rem 0.55rem 0.7rem;
+  }
+
+  .stat dd {
+    font-size: clamp(1.15rem, 5vw, 1.55rem);
+  }
+
+  .stat .stat-note {
+    font-size: 0.72rem;
   }
 
   .timeline::before {
@@ -1055,15 +1134,6 @@ table.results .is-dnf td:last-child {
   .timeline li p:last-child {
     padding-left: 0.7rem;
   }
-
-  .stat {
-    border-right: 0;
-    border-bottom: 4px solid var(--ink);
-  }
-
-  .stat:last-child {
-    border-bottom: 0;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1074,5 +1144,10 @@ table.results .is-dnf td:last-child {
   .brand:hover .brand-mark path,
   .brand:focus-visible .brand-mark path {
     animation: none;
+  }
+
+  .btn:hover {
+    transform: none;
+    box-shadow: 5px 5px 0 var(--ink);
   }
 }

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Resultater
-description: Resultater for Kløvstien Open, år for år.
+description: Resultatlister for Kløvstien Open. Kilian Jornet har løyperekorden på 1:26 fra 2024. Hans Kristian Smedsrød Engdahl vant i 2025.
 permalink: /resultater/
 ---
 

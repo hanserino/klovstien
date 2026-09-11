@@ -25,6 +25,7 @@
     <details class="nav-drop"{% if current contains '/resultater' %} open{% endif %}>
       <summary>Resultater</summary>
       <div class="nav-drop-list">
+        <a class="nav-link nav-sub{% if current == '/resultater/' %} is-active{% endif %}" href="{{ '/resultater/' | relative_url }}">Oversikt</a>
         {% for year in site.race.years %}
           {% assign year_path = '/resultater/' | append: year | append: '/' %}
           <a class="nav-link nav-sub{% if current == year_path %} is-active{% endif %}" href="{{ year_path | relative_url }}">{{ year }}</a>
