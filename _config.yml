@@ -46,3 +46,6 @@ race:
   registration_url: https://www.fjelldatabasen.no/
   registration_label: Fjelldatabasen.no
   years: [2026, 2025, 2024]
+
+analytics:
+  ga4: G-TJLZ3K36KE
