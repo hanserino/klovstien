@@ -88,7 +88,7 @@ permalink: /historie/
     <li>
       <p class="timeline-year">2024</p>
       <span class="timeline-mark" aria-hidden="true"></span>
-      <p>Første Kløvstien Open arrangeres. Arrangør Hans K. Smedsrød Engdahl, Tristan Hauff og Kilian Jornet stilte til start. Trollstigen var tilfeldigvis stengt pga rassikring denne dagen, noe som gjorde at alle unntatt Kilian ble stanset ved Stigfossen. Løyperekord: 1t 27min.</p>
+      <p>Første Kløvstien Open arrangeres. Arrangør Hans K. Smedsrød Engdahl, Tristan Hauff og Kilian Jornet stilte til start. Trollstigen var tilfeldigvis stengt pga rassikring denne dagen, noe som gjorde at alle unntatt Kilian ble stanset ved Stigfossen. Løyperekord: 1t 26min.</p>
     </li>
     <li>
       <p class="timeline-year">2025</p>
