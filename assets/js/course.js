@@ -211,6 +211,8 @@
       attributionControl: true
     });
 
+    setupTouchLock();
+
     map.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), "top-right");
     map.addControl(new maplibregl.TerrainControl({ source: "terrainSource", exaggeration: 1.55 }));
 
@@ -279,6 +281,54 @@
         coords.forEach(function (c) { bounds.extend(c); });
         map.fitBounds(bounds, { padding: 80, pitch: 48, bearing: 186, duration: reducedMotion ? 0 : 1400 });
       });
+    }
+  }
+
+  function needsTouchLock() {
+    return window.matchMedia("(pointer: coarse), (max-width: 860px)").matches;
+  }
+
+  function setMapHandlers(enabled) {
+    if (!map) return;
+    var method = enabled ? "enable" : "disable";
+    ["dragPan", "scrollZoom", "boxZoom", "dragRotate", "keyboard", "doubleClickZoom", "touchZoomRotate", "touchPitch"].forEach(function (name) {
+      var handler = map[name];
+      if (handler && typeof handler[method] === "function") handler[method]();
+    });
+  }
+
+  function setupTouchLock() {
+    var frame = document.querySelector(".map-frame");
+    var unlockBtn = document.getElementById("unlock-map");
+    if (!frame || !unlockBtn || !needsTouchLock()) return;
+
+    function lock() {
+      frame.classList.remove("is-interactive");
+      unlockBtn.textContent = "Bruk kartet";
+      unlockBtn.setAttribute("aria-pressed", "false");
+      setMapHandlers(false);
+    }
+
+    function unlock() {
+      frame.classList.add("is-interactive");
+      unlockBtn.textContent = "Ferdig";
+      unlockBtn.setAttribute("aria-pressed", "true");
+      setMapHandlers(true);
+    }
+
+    unlockBtn.addEventListener("click", function () {
+      if (frame.classList.contains("is-interactive")) lock();
+      else unlock();
+    });
+    lock();
+
+    if ("IntersectionObserver" in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) lock();
+        });
+      }, { threshold: 0.25 });
+      observer.observe(frame);
     }
   }
 

@@ -8,7 +8,7 @@ permalink: /historie/
 <article class="prose">
   <p class="badge kicker">Romsdalen · Valldal</p>
   <h1>Stien som bar regionen</h1>
-  <p class="lede">Kløvstien ble bygd for å frakte varer mellom Romsdalen og Valldal med kløv — last på hesteryggen. Da Trollstigvegen åpnet i 1936, ble det mindre bruk for den. Stien er likevel i god behold, og brukes i dag av turgåere, løpere og turister.</p>
+  <p class="lede">Kløvstien ble bygd for å frakte varer mellom Romsdalen og Valldal med kløv — last på hesteryggen. Da hest ble byttet ut med bil og Trollstigvegen åpnet i 1936, ble det naturligvis mindre bruk for den. Stien er likevel i god behold, og brukes i dag av turgåere, løpere og turister.</p>
 
   <figure class="arkiv">
     <img src="{{ '/assets/images/arkiv/trollstigen-isterdalen.jpg' | relative_url }}" width="1920" height="1781" alt="Isterdalen sett fra Trollstigvegen, med steinmur i forgrunnen og dalen som åpner seg mot Romsdalen." fetchpriority="high">

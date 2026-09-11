@@ -537,7 +537,7 @@ a:hover {
 .chrono {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch;
+  align-items: flex-start;
   gap: 1.1rem 1.6rem;
   margin: 0 0 1.6rem;
 }
@@ -576,12 +576,14 @@ a:hover {
 .chrono-date {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding-top: 0.28em;
   font-family: var(--cond);
   font-size: 1.45rem;
   font-weight: 600;
   letter-spacing: 0.04em;
-  line-height: 1.2;
+  line-height: 1.15;
   text-transform: uppercase;
 }
 
@@ -748,7 +750,7 @@ a:hover {
   position: absolute;
   left: 1rem;
   bottom: 1rem;
-  z-index: 2;
+  z-index: 4;
   display: flex;
   gap: 0.5rem;
 }
@@ -766,10 +768,46 @@ a:hover {
   border-color: var(--ink);
 }
 
+.map-unlock {
+  display: none;
+}
+
+@media (pointer: coarse), (max-width: 860px) {
+  .map-unlock {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(17, 17, 17, 0.34);
+    touch-action: pan-y;
+  }
+
+  .map-frame.is-interactive .map-unlock {
+    background: none;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0.85rem;
+    pointer-events: none;
+    touch-action: auto;
+  }
+
+  .map-unlock .btn {
+    pointer-events: auto;
+  }
+}
+
 .map-caption {
-  font-size: 0.9rem;
-  color: var(--ink-soft);
-  margin: 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  margin: 1.6rem 0 0;
+}
+
+.map-caption .btn {
+  font-size: 1.12rem;
+  min-height: 3.15rem;
+  padding: 0.85rem 1.7rem;
 }
 
 .map-marker {
