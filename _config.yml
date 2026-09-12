@@ -28,10 +28,10 @@ defaults:
       path: ""
     values:
       image:
-        path: /assets/images/og.jpg
+        path: /assets/images/og.png
         width: 1200
         height: 630
-        alt: Trollstigvegen under Stigfossen i Isterdalen.
+        alt: Løpere i Isterdalen under Kløvstien Open.
 
 race:
   name: Kløvstien Open
