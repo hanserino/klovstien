@@ -450,6 +450,16 @@ a:hover {
   margin: 0;
 }
 
+.footer-logo-link {
+  flex-shrink: 0;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.footer-logo-link:hover {
+  text-decoration: none;
+}
+
 .footer-logo {
   width: 4.6rem;
   height: 4.6rem;
@@ -722,6 +732,11 @@ a:hover {
 
 .prose p {
   margin: 0 0 1.1rem;
+}
+
+.prose em {
+  font-style: normal;
+  font-weight: 600;
 }
 
 .prose .kicker,
@@ -1248,6 +1263,53 @@ table.results .is-dnf td:last-child {
   color: var(--ink-soft);
 }
 
+.kit-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0 0;
+  max-width: 40rem;
+  counter-reset: kit;
+}
+
+.kit-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.1rem 0.55rem;
+  padding: 0.55rem 0 0.7rem;
+  border-bottom: 3px solid var(--ink);
+  counter-increment: kit;
+}
+
+.kit-list li::before {
+  content: counter(kit, decimal-leading-zero);
+  font-family: var(--display);
+  font-size: 1.15rem;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  min-width: 1.9rem;
+}
+
+.kit-item {
+  font-family: var(--display);
+  font-size: clamp(1.45rem, 3.4vw, 2.15rem);
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1;
+}
+
+.kit-list .stat-note {
+  flex: 1 1 12rem;
+  font-family: var(--cond);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+}
+
 .year-list {
   list-style: none;
   padding: 0;
@@ -1255,6 +1317,8 @@ table.results .is-dnf td:last-child {
 }
 
 .year-list a {
+  display: block;
+  padding: 0.45rem 0 0.7rem;
   font-family: var(--display);
   font-size: 2.4rem;
   font-style: italic;
@@ -1268,8 +1332,20 @@ table.results .is-dnf td:last-child {
   color: var(--yellow);
 }
 
+.year-list a .stat-note {
+  font-family: var(--cond);
+  font-size: 0.95rem;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+}
+
+.year-list a:hover .stat-note {
+  color: var(--yellow);
+}
+
 .year-list li {
-  padding: 0.45rem 0 0.7rem;
   border-bottom: 3px solid var(--ink);
 }
 
