@@ -505,7 +505,7 @@ a:hover {
   align-items: center;
   gap: 0.7rem;
   font-family: var(--cond);
-  font-size: 0.82rem;
+  font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1394,6 +1394,35 @@ table.results .is-dnf td:last-child {
     box-shadow: 0 -6px 0 currentColor, 0 6px 0 currentColor;
   }
 
+  .home .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    background: transparent;
+    pointer-events: none;
+  }
+
+  .home .sidebar-top {
+    justify-content: flex-end;
+  }
+
+  .home .brand {
+    display: none;
+  }
+
+  .home .menu-toggle {
+    background: var(--ink);
+    padding: 0.48rem 0.8rem 0.42rem;
+    min-height: 2.4rem;
+    pointer-events: auto;
+  }
+
+  .home .menu-toggle:focus-visible {
+    outline-color: var(--yellow);
+  }
+
   .nav,
   .sidebar-foot {
     display: none;
@@ -1408,6 +1437,26 @@ table.results .is-dnf td:last-child {
   .sidebar.is-open {
     gap: 1.4rem;
     padding-bottom: 1.4rem;
+  }
+
+  .home .sidebar.is-open {
+    background: var(--ink);
+    pointer-events: auto;
+  }
+
+  .home .sidebar.is-open .sidebar-top {
+    justify-content: space-between;
+  }
+
+  .home .sidebar.is-open .brand {
+    display: grid;
+  }
+
+  .home .sidebar.is-open .menu-toggle {
+    background: none;
+    color: var(--paper);
+    padding: 0.35rem 0;
+    min-height: 0;
   }
 
   .shell {
@@ -1429,7 +1478,7 @@ table.results .is-dnf td:last-child {
   }
 
   .home .hero {
-    padding: 1.6rem 1.15rem 2rem;
+    padding: 0.9rem 1.15rem 2rem;
     background-position: 72% 42%;
   }
 

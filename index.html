@@ -8,7 +8,7 @@ body_class: home
 
 <article>
   <header class="hero" style="--hero-image: url('{{ '/assets/images/personlige-bilder/6.jpeg' | relative_url }}')">
-    <p class="hero-tape">Åndalsnes - Trollstigplatået · 2026</p>
+    <p class="hero-tape">Åndalsnes - Trollstigplatået</p>
     <h1>
       <span class="hero-word">Kløvstien</span>
       <span class="hero-script">Open</span>
@@ -24,12 +24,12 @@ body_class: home
       <p class="chrono-date">{{ site.race.date_display }}<br>III. utgave</p>
     </div>
 
-    <div class="hero-actions">
+    <!--<div class="hero-actions">
       <a class="btn" href="{{ site.race.registration_url }}" rel="noopener noreferrer">Påmelding</a>
       <a class="btn btn-ghost" href="{{ '/historie/' | relative_url }}">Historien</a>
       <a class="btn btn-ghost" href="{{ '/bilder/' | relative_url }}">Bilder</a>
       <a class="btn btn-ghost" href="{{ '/resultater/' | relative_url }}">Resultater</a>
-    </div>
+    </div>-->
 
     <dl class="stats">
       <div class="stat">
@@ -49,31 +49,18 @@ body_class: home
     </dl>
   </header>
   
-  <section class="section prose">
-    <h2>Dette er Kløvstien Open</h2>
-    <p>Kløvstien Open er <em>en årlig manndomsprøve</em> fra togstasjonen i Åndalsnes sentrum til Trollstigplatået på den berømte Kløvstien via stiene i Isterdalen.
-        Dette er en <em>historisk handelsrute</em> som har vært brukt til transportere varer mellom Romsdalen og Valldal i snart 1000 år. Dette er ikke et offisielt idrettsarrangement, men en gjeng som møtes for å se hvor raskt vi klarer å løpe fra Åndalsnes til Trollstigplatået.
-    </p>
-    <p><em>Tidtakning</em> gjøres ved hjelp av <a href="{{ site.race.registration_url }}" rel="noopener noreferrer">Fjelldatabasen</a> via Strava, så du er selv ansvarlig for å starte og stoppe klokka. 
-        Det er ingen startnummer, ingen premier og ingen påmeldingsavgift - kun stien, klokka og din blodsmak i munnen.
-    </p>
-    <p>NB! Trollstigvegen har en tendens til å være stengt så sent på sesongen, så ikke belag deg på å bli kjørt ned. I 2025 satt noen av oss biler ved Kløvstien-parkeringen og jogget sammen ned dit etter løpet mens noen jogget helt tilbake til start. Dette funket bra.</p>
-    <p>Sjekk værmelding, ta med det du trenger og vis hensyn til stien som har båret folk og fe i århundrer.</p>
-  </section>
-
-  <section class="section" id="utstyr" aria-labelledby="utstyr-tittel">
-    <h2 id="utstyr-tittel">Mandatory Equipment</h2>
-    <p class="section-intro">Ingen sjekker sekken din ved start. Oktober i Isterdalen gjør det likevel. Dette er minimum.</p>
-    <ol class="kit-list">
-      {% for item in site.data.utstyr %}
-        <li>
-          <span class="kit-item">{{ item.navn }}</span>
-          {% if item.note %}
-            <span class="stat-note"> — {{ item.note }}</span>
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ol>
+  <section class="section" aria-labelledby="om-tittel">
+    <h2 id="om-tittel">Dette er Kløvstien Open</h2>
+    <div class="prose">
+      <p>Kløvstien Open er <em>en årlig manndomsprøve</em> fra togstasjonen i Åndalsnes sentrum til Trollstigplatået på den berømte Kløvstien via stiene i Isterdalen.
+          Dette er en <em>historisk handelsrute</em> som har vært brukt til transportere varer mellom Romsdalen og Valldal i snart 1000 år. Dette er ikke et offisielt idrettsarrangement, men en gjeng som møtes for å se hvor raskt vi klarer å løpe fra Åndalsnes til Trollstigplatået.
+      </p>
+      <p><em>Tidtakning</em> gjøres ved hjelp av <a target="_blank" href="{{ site.race.registration_url }}" rel="noopener noreferrer">Fjelldatabasen</a> via Strava, så du er selv ansvarlig for å starte og stoppe klokka.
+          Det er ingen startnummer, ingen premier og ingen påmeldingsavgift - kun stien, klokka og din blodsmak i munnen.
+      </p>
+      <p>NB! Trollstigvegen har en tendens til å være stengt så sent på sesongen, så ikke belag deg på å bli kjørt ned. I 2025 satt noen av oss biler ved Kløvstien-parkeringen og jogget sammen ned dit etter løpet mens noen jogget helt tilbake til start. Dette funket bra.</p>
+      <p>Sjekk værmelding, ta med det du trenger og vis hensyn til stien som har båret folk og fe i århundrer.</p>
+    </div>
   </section>
 
   <section class="section" aria-labelledby="kart-tittel">
@@ -97,6 +84,21 @@ body_class: home
     <p class="map-caption">
       <a class="btn" href="{{ '/assets/data/klovstien-open.gpx' | relative_url }}">Last ned GPX</a>
     </p>
+  </section>
+
+  <section class="section" id="utstyr" aria-labelledby="utstyr-tittel">
+    <h2 id="utstyr-tittel">Mandatory Equipment</h2>
+    <p class="section-intro">Ingen sjekker sekken din ved start. Oktober i Isterdalen gjør det likevel. Dette er minimum.</p>
+    <ol class="kit-list">
+      {% for item in site.data.utstyr %}
+        <li>
+          <span class="kit-item">{{ item.navn }}</span>
+          {% if item.note %}
+            <span class="stat-note"> — {{ item.note }}</span>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ol>
   </section>
 
 </article>
