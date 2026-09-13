@@ -15,6 +15,7 @@
     if (!sets[id]) sets[id] = [];
     sets[id].push({
       src: btn.getAttribute("data-src"),
+      thumb: btn.getAttribute("data-thumb") || "",
       alt: btn.getAttribute("data-alt") || "",
       caption: btn.getAttribute("data-caption") || ""
     });
@@ -27,17 +28,48 @@
   var index = 0;
   var lastFocus = null;
   var startX = 0;
+  var loadToken = 0;
+
+  function prefetch(i) {
+    var item = currentSet[i];
+    if (!item || !item.src) return;
+    var pre = new Image();
+    pre.src = item.src;
+  }
+
+  function prefetchNeighbors() {
+    if (currentSet.length < 2) return;
+    prefetch((index + 1) % currentSet.length);
+    prefetch((index - 1 + currentSet.length) % currentSet.length);
+  }
 
   function render() {
     var item = currentSet[index];
     if (!item) return;
-    img.src = item.src;
+    var token = ++loadToken;
+    var fullSrc = item.src;
     img.alt = item.alt;
     caption.textContent = item.caption;
     counter.textContent = index + 1 + " / " + currentSet.length;
     var many = currentSet.length > 1;
     prevBtn.hidden = !many;
     nextBtn.hidden = !many;
+
+    function apply() {
+      if (token !== loadToken) return;
+      if (img.getAttribute("src") !== fullSrc) {
+        img.src = fullSrc;
+      }
+      prefetchNeighbors();
+    }
+
+    var full = new Image();
+    full.onload = apply;
+    full.onerror = apply;
+    full.src = fullSrc;
+    if (full.complete && full.naturalWidth) {
+      apply();
+    }
   }
 
   function openSet(id, i) {

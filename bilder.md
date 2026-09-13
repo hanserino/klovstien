@@ -32,9 +32,8 @@ gallery: true
   <section class="sted-gallery" aria-labelledby="sted-tittel">
     <div class="prose">
       <h2 id="sted-tittel">Isterdalen og Kløvstien</h2>
-      <p>Landskap og arkiv fra stien, dalen og platået — uten startnummer og klokke.</p>
+      <p>Bilder fra Isterdalen og Kløvstien tatt utenom konkurranse.</p>
     </div>
     {% include galleri.html items=site.data.bilder.sted gallery_id="sted" modifier="gallery-grid--arkiv" eager=true %}
-    <p class="sources">Arkivfotografiene er hentet fra Nasjonalbibliotekets bildesamling via Wikimedia Commons, og er i public domain.</p>
   </section>
 </article>

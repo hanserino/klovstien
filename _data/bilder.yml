@@ -1,4 +1,5 @@
 # Løpsbilder: nyeste år øverst. Legg filene i assets/images/lop/<år>/ og list dem her.
+# Lag 640 px-miniatyr i assets/images/thumbs/ med samme filsti (se scripts/thumbs.sh).
 # Tekst med kolon (f.eks. Foto:) må stå i hermetegn.
 lop:
   - year: 2026
