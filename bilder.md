@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Bilder
-description: Bilder fra Kløvstien Open, og fra Isterdalen og den gamle kløvvegen utenom løpet.
+description: Bilder fra terrengløpet Kløvstien Open, og fra Isterdalen og Kløvstien utenom løpet.
 permalink: /bilder/
 gallery: true
 ---

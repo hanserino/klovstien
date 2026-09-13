@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Historien til Kløvstien
-description: Historien til Kløvstien, den gamle kløvvegen mellom Romsdal og Sunnmøre — og bakgrunnen for stiløpet Kløvstien Open fra Åndalsnes til Trollstigplatået.
+description: Historien til Kløvstien, den gamle kløvvegen mellom Romsdal og Sunnmøre — og bakgrunnen for terrengløpet Kløvstien Open fra Åndalsnes til Trollstigplatået.
 permalink: /historie/
 ---
 
