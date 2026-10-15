@@ -640,6 +640,10 @@ a:hover {
   padding-bottom: 0.35rem;
 }
 
+.hero-register {
+  display: none;
+}
+
 .stats {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1421,6 +1425,12 @@ table.results .is-dnf td:last-child {
 
   .home .menu-toggle:focus-visible {
     outline-color: var(--yellow);
+  }
+
+  .hero-register {
+    display: flex;
+    width: 100%;
+    margin-top: 0.85rem;
   }
 
   .nav,
