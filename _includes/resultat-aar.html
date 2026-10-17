@@ -11,7 +11,7 @@
   <p class="lede">{{ data.ingress }}</p>
 
   {% if data.status == 'kommende' %}
-    <p class="notice">{{ site.race.date_display }} kl. {{ site.race.time }}. Påmelding og tidtaking hos <a href="{{ site.race.registration_url }}" rel="noopener noreferrer">{{ site.race.registration_label }}</a>. Listen her oppdateres etter løpet.</p>
+    <p class="notice">{{ site.race.date_display }} kl. {{ site.race.time }}. Påmelding hos <a href="{{ site.race.registration_url }}" target="_blank" rel="noopener noreferrer">{{ site.race.registration_label }}</a>{% if site.race.tracking_url %} og tidtaking hos <a href="{{ site.race.tracking_url }}" target="_blank" rel="noopener noreferrer">Fjelldatabasen</a>{% endif %}. Listen her oppdateres etter løpet.</p>
   {% else %}
   {% endif %}
 
@@ -40,7 +40,10 @@
         </tbody>
       </table>
     </div>
+    {% if data.kilde_url %}
+      <p>Full resultatliste hos <a href="{{ data.kilde_url }}" target="_blank" rel="noopener noreferrer">Fjelldatabasen</a>.</p>
+    {% endif %}
   {% else %}
-    <p class="empty-results">Ingen tider er publisert her ennå. Når listen er klar, kommer den på denne siden. Fram til da er <a href="{{ site.race.registration_url }}" rel="noopener noreferrer">{{ site.race.registration_label }}</a> stedet for påmelding og tidtaking.</p>
+    <p class="empty-results">Ingen tider er publisert her ennå. Når listen er klar, kommer den på denne siden.{% if site.race.tracking_url %} Fram til da er <a href="{{ site.race.tracking_url }}" target="_blank" rel="noopener noreferrer">Fjelldatabasen</a> stedet for tidtaking.{% endif %}</p>
   {% endif %}
 </article>

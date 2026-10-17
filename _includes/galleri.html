@@ -1,6 +1,16 @@
 <ul class="gallery-grid{% if include.modifier %} {{ include.modifier }}{% endif %}">
   {% for foto in include.items %}
     {% assign thumb = foto.src | replace_first: '/assets/images/', '/assets/images/thumbs/' %}
+    {% assign credit_url = "" %}
+    {% if foto.credit_url %}
+      {% assign credit_url = foto.credit_url %}
+    {% elsif foto.caption %}
+      {% for fotograf in site.data.bilder.fotografer %}
+        {% if foto.caption contains fotograf.navn %}
+          {% assign credit_url = fotograf.url %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
     <li>
       <button
         type="button"
@@ -11,6 +21,7 @@
         data-thumb="{{ thumb | relative_url }}"
         data-alt="{{ foto.alt | escape }}"
         data-caption="{{ foto.caption | escape }}"
+        {% if credit_url != "" %}data-credit-url="{{ credit_url | escape }}"{% endif %}
         aria-label="Vis i fullskjerm: {{ foto.alt | escape }}"
       >
         <img

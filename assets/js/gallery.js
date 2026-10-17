@@ -17,7 +17,8 @@
       src: btn.getAttribute("data-src"),
       thumb: btn.getAttribute("data-thumb") || "",
       alt: btn.getAttribute("data-alt") || "",
-      caption: btn.getAttribute("data-caption") || ""
+      caption: btn.getAttribute("data-caption") || "",
+      creditUrl: btn.getAttribute("data-credit-url") || ""
     });
     btn.addEventListener("click", function () {
       openSet(id, parseInt(btn.getAttribute("data-index"), 10));
@@ -29,6 +30,30 @@
   var lastFocus = null;
   var startX = 0;
   var loadToken = 0;
+
+  function setCaption(item) {
+    caption.textContent = "";
+    var text = item.caption || "";
+    var url = item.creditUrl || "";
+    if (!text) return;
+    if (!url) {
+      caption.textContent = text;
+      return;
+    }
+
+    var prefix = "Foto: ";
+    var name = text.indexOf(prefix) === 0 ? text.slice(prefix.length) : text;
+    if (text.indexOf(prefix) === 0) {
+      caption.appendChild(document.createTextNode(prefix));
+    }
+
+    var link = document.createElement("a");
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = name;
+    caption.appendChild(link);
+  }
 
   function prefetch(i) {
     var item = currentSet[i];
@@ -49,7 +74,7 @@
     var token = ++loadToken;
     var fullSrc = item.src;
     img.alt = item.alt;
-    caption.textContent = item.caption;
+    setCaption(item);
     counter.textContent = index + 1 + " / " + currentSet.length;
     var many = currentSet.length > 1;
     prevBtn.hidden = !many;
@@ -123,12 +148,12 @@
   });
 
   dialog.addEventListener("pointerdown", function (event) {
-    if (event.target.closest("button")) return;
+    if (event.target.closest("button, a")) return;
     startX = event.clientX;
   });
 
   dialog.addEventListener("pointerup", function (event) {
-    if (event.target.closest("button")) return;
+    if (event.target.closest("button, a")) return;
     var dx = event.clientX - startX;
     if (Math.abs(dx) > 56) {
       step(dx < 0 ? 1 : -1);

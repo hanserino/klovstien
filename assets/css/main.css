@@ -1208,6 +1208,15 @@ a:hover {
   max-width: 40rem;
 }
 
+.lightbox-caption a {
+  color: var(--paper);
+  text-decoration-color: var(--yellow);
+}
+
+.lightbox-caption a:focus-visible {
+  outline-color: var(--yellow);
+}
+
 .lightbox-counter {
   margin-top: 0.35rem;
   font-size: 0.78rem;
