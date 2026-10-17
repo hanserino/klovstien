@@ -8,7 +8,7 @@ permalink: /resultater/
 <article class="prose">
   <p class="badge kicker">Palmarès</p>
   <h1>Resultater</h1>
-  <p class="lede">Kløvstien Open har gått i 2024, 2025 og 2026.</p>
+  <p class="lede">Kløvstien Open har blitt arrangert i 2024, 2025 og 2026.</p>
 
   <ul class="year-list">
     {% for year in site.race.years %}
