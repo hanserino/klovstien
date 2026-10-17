@@ -31,7 +31,9 @@
               <td>{{ row.plass }}</td>
               <td>
                 {{ row.navn }}
-                {% if row.rekord %}<span class="record-flag">Løyperekord</span>{% endif %}
+                {% if row.rekord %}
+                  <span class="record-flag">{% if row.rekord == true %}Løyperekord{% else %}{{ row.rekord }}{% endif %}</span>
+                {% endif %}
                 {% if row.merknad %}<span class="result-note">{{ row.merknad }}</span>{% endif %}
               </td>
               <td>{{ row.tid }}</td>
