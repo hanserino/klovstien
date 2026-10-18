@@ -1521,7 +1521,8 @@ table.results .is-dnf td:last-child {
 
   .home .hero {
     padding: 0.9rem 1.15rem 2rem;
-    background-position: 72% 42%;
+    background-size: auto 145%;
+    background-position: 70% 72%;
   }
 
   .home article > .section {
