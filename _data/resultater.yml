@@ -88,7 +88,7 @@
           tid: "2:44:44"
     - id: landevei
       tittel: Landeveissykkel
-      note: Via Trollstigen.
+      note: Asfalt via Frydenlund, Brønnsletta og deretter opp Trollstigen.
       entries:
         - plass: 1
           navn: Andre Kristoffersen
@@ -98,17 +98,17 @@
           tid: "58:15"
     - id: gravel
       tittel: Gravel
-      note: Via Trollstigen.
+      note: Fulgte ca samme rute som løperne, men tok av til asfalten ved fellesbeitet i Isterdalen og deretter opp Trollstigen.
       entries:
         - plass: 1
           navn: Lars Hauff
-          tid: Uvisst
+          tid: "1:12:59"
         - plass: 2
           navn: Matti Bernitz
           tid: "1:18:04"
     - id: rulleski
       tittel: Rulleski
-      note: Kun opp Trollstigen. Segmentet starter ved Trollstigen Camping.
+      note: Tiden som er ført opp er tiden fra Trollstigen-segmentet på Strava, som starter ved Trollstigen Camping. 
       entries:
         - plass: 1
           navn: Iver Systnes Hole
