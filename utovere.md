@@ -8,7 +8,7 @@ permalink: /utovere/
 <article class="prose">
   <p class="badge kicker">Chrono</p>
   <h1>Utøvere</h1>
-  <p class="lede">Alle som har en tid i resultatlista. Åpne en profil for tider over årene.</p>
+  <p class="lede">Alle som har en tid i resultatlista gjennom tidene. Trykk på et navn og se prestasjonene og utviklingen deres over tid.</p>
 
   <ul class="year-list utover-list">
     {% assign liste = site.data.utovere %}
