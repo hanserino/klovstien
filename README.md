@@ -21,6 +21,6 @@ Repoet er satt opp for GitHub Pages med Jekyll og custom domain `klovstien.no` (
 
 ## Resultater
 
-Fyll inn tider i `_data/resultater.yml`. Påmelding og tidtaking skjer hos [Fjelldatabasen](https://www.fjelldatabasen.no/).
+Fyll inn tider i `_data/resultater.yml`. Kjør `ruby scripts/generate_utovere.rb` etterpå, så utøversidene holder tritt. Påmelding og tidtaking skjer hos [Fjelldatabasen](https://www.fjelldatabasen.no/).
 
 Arkivfotografiene er fra Nasjonalbiblioteket (public domain).

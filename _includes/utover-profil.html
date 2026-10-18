@@ -1,0 +1,68 @@
+{% assign person = site.data.utovere | where: "slug", page.slug | first %}
+
+<article class="prose">
+  <p class="badge kicker">Chrono</p>
+  <h1>{{ person.navn }}</h1>
+
+  {% if person.starter %}
+    <ul class="utover-stats">
+      <li>
+        <span class="utover-stat-value">{{ person.starter }}</span>
+        <span class="utover-stat-label">{% if person.starter == 1 %}start{% else %}starter{% endif %}</span>
+      </li>
+      {% if person.pers_tid %}
+        <li>
+          <span class="utover-stat-value">{{ person.pers_tid }}</span>
+          <span class="utover-stat-label">Pers{% if person.pers_disiplin %} · {{ person.pers_disiplin }} {{ person.pers_year }}{% endif %}</span>
+        </li>
+      {% endif %}
+      {% if person.delta_tid %}
+        <li>
+          <span class="utover-stat-value{% if person.delta_bedre %} is-gain{% endif %}">{{ person.delta_tid }}</span>
+          <span class="utover-stat-label">{% if person.delta_bedre %}raskere{% else %}saktere{% endif %} enn {{ person.delta_year }}</span>
+        </li>
+      {% endif %}
+    </ul>
+  {% endif %}
+
+  <figure class="utover-chart">
+    <div id="utover-filters" class="utover-filters" hidden></div>
+    <div id="utover-chart" class="utover-chart-frame" role="img" aria-label="Graf over tider for {{ person.navn }}"></div>
+    <figcaption id="utover-readout" class="utover-readout">Raskere tid ligger høyere.</figcaption>
+  </figure>
+  <script type="application/json" id="utover-data">{{ person | jsonify }}</script>
+
+  <h2 class="result-discipline-title">Resultater</h2>
+  <div class="table-wrap">
+    <table class="results">
+      <thead>
+        <tr>
+          <th>År</th>
+          <th>Disiplin</th>
+          <th>Plass</th>
+          <th>Tid</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in person.results %}
+          <tr{% if row.tid contains 'DNF' or row.tid == 'Ukjent' or row.tid == 'Uvisst' %} class="is-dnf"{% endif %}>
+            <td>
+              <a href="{{ '/resultater/' | append: row.year | append: '/' | relative_url }}">{{ row.year }}</a>
+            </td>
+            <td>
+              {{ row.disiplin }}
+              {% if row.rekord %}
+                <span class="record-flag">{% if row.rekord == true %}Løyperekord{% else %}{{ row.rekord }}{% endif %}</span>
+              {% endif %}
+              {% if row.merknad %}<span class="result-note">{{ row.merknad }}</span>{% endif %}
+            </td>
+            <td>{{ row.plass }}</td>
+            <td>{{ row.tid }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <p><a href="{{ '/utovere/' | relative_url }}">Alle utøvere</a></p>
+</article>

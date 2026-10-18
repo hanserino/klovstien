@@ -24,6 +24,7 @@ exclude:
   - node_modules
   - Kløvstien_Open_2025.gpx
   - assets/images/lop/2026/utvalgte
+  - scripts
 defaults:
   - scope:
       path: ""

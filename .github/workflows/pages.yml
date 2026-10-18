@@ -19,6 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+      - run: ruby scripts/generate_utovere.rb
       - uses: actions/configure-pages@v5
       - uses: actions/jekyll-build-pages@v1
         with:

@@ -13,7 +13,12 @@
           <tr{% if row.tid contains 'DNF' or row.tid == 'Ukjent' or row.tid == 'Uvisst' %} class="is-dnf"{% endif %}>
             <td>{{ row.plass }}</td>
             <td>
-              {{ row.navn }}
+              {% assign utover_slug = site.data.utover_slugs[row.navn] %}
+              {% if utover_slug %}
+                <a class="result-name" href="{{ '/utovere/' | append: utover_slug | append: '/' | relative_url }}">{{ row.navn }}</a>
+              {% else %}
+                {{ row.navn }}
+              {% endif %}
               {% if row.rekord %}
                 <span class="record-flag">{% if row.rekord == true %}Løyperekord{% else %}{{ row.rekord }}{% endif %}</span>
               {% endif %}

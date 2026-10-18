@@ -49,6 +49,7 @@
           <a href="{{ '/historie/' | relative_url }}">Historie</a>
           <a href="{{ '/bilder/' | relative_url }}">Bilder</a>
           <a href="{{ '/resultater/' | relative_url }}">Resultater</a>
+          <a href="{{ '/utovere/' | relative_url }}">Utøvere</a>
           {% for year in site.race.years %}
             {% assign data = site.data.resultater[year] %}
             {% unless data.status == 'kommende' %}
@@ -69,6 +70,9 @@
     {% if page.gallery %}
     {% include lightbox.html %}
     <script src="{{ '/assets/js/gallery.js' | relative_url }}" defer></script>
+    {% endif %}
+    {% if page.utover %}
+    <script src="{{ '/assets/js/utover.js' | relative_url }}" defer></script>
     {% endif %}
     {% if page.map %}
     <script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.2/dist/maplibre-gl.js" defer></script>

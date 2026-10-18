@@ -23,10 +23,11 @@
     <a class="nav-link{% if current == '/historie/' %} is-active{% endif %}" href="{{ '/historie/' | relative_url }}">Historie</a>
     <a class="nav-link{% if current == '/bilder/' %} is-active{% endif %}" href="{{ '/bilder/' | relative_url }}">Bilder</a>
 
-    <details class="nav-drop"{% if current contains '/resultater' %} open{% endif %}>
+    <details class="nav-drop"{% if current contains '/resultater' or current contains '/utovere' %} open{% endif %}>
       <summary>Resultater</summary>
       <div class="nav-drop-list">
         <a class="nav-link nav-sub{% if current == '/resultater/' %} is-active{% endif %}" href="{{ '/resultater/' | relative_url }}">Oversikt</a>
+        <a class="nav-link nav-sub{% if current contains '/utovere' %} is-active{% endif %}" href="{{ '/utovere/' | relative_url }}">Utøvere</a>
         {% for year in site.race.years %}
           {% assign data = site.data.resultater[year] %}
           {% unless data.status == 'kommende' %}

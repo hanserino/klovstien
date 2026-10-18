@@ -1,0 +1,434 @@
+- navn: Ahmed Merdagani
+  results:
+  - year: 2026
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 9
+    tid: '1:47:41'
+    seconds: 6461
+  slug: ahmed-merdagani
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:47:41'
+  pers_year: 2026
+  pers_disiplin: Løping
+- navn: Andre Kristoffersen
+  results:
+  - year: 2026
+    disiplin_id: landevei
+    disiplin: Landeveissykkel
+    plass: 1
+    tid: '57:09'
+    seconds: 3429
+    note: Asfalt via Frydenlund, Brønnsletta og deretter opp Trollstigen.
+  slug: andre-kristoffersen
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '57:09'
+  pers_year: 2026
+  pers_disiplin: Landeveissykkel
+- navn: Bjørn Tore Tollefsen
+  results:
+  - year: 2026
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 12
+    tid: '2:44:44'
+    seconds: 9884
+    merknad: Løp sammen med Knut Hodnebrog fra start til slutt
+  slug: bjorn-tore-tollefsen
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '2:44:44'
+  pers_year: 2026
+  pers_disiplin: Løping
+- navn: Bjørnar Skjeflo Unhjem
+  results:
+  - year: 2026
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 2
+    tid: '1:23:25'
+    seconds: 5005
+  slug: bjornar-skjeflo-unhjem
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:23:25'
+  pers_year: 2026
+  pers_disiplin: Løping
+- navn: Brynhild Systnes
+  results:
+  - year: 2026
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 7
+    tid: '1:42:59'
+    seconds: 6179
+  slug: brynhild-systnes
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:42:59'
+  pers_year: 2026
+  pers_disiplin: Løping
+- navn: Hans Kristian Smedsrød Engdahl
+  results:
+  - year: 2024
+    disiplin_id: loping
+    disiplin: Løping
+    plass: "—"
+    tid: Force majeure - DNF
+    merknad: Stoppet ved Stigfossen etter 1:23 pga veiarbeid
+  - year: 2025
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 1
+    tid: '1:34:59'
+    seconds: 5699
+  - year: 2026
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 4
+    tid: '1:29:32'
+    seconds: 5372
+  slug: hans-kristian-smedsrod-engdahl
+  starter: 3
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:29:32'
+  pers_year: 2026
+  pers_disiplin: Løping
+  delta_tid: "−5:27"
+  delta_year: 2025
+  delta_bedre: true
+- navn: Helene Birkeli
+  results:
+  - year: 2025
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 2
+    tid: '1:44:30'
+    seconds: 6270
+  slug: helene-birkeli
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:44:30'
+  pers_year: 2025
+  pers_disiplin: Løping
+- navn: Henriette Albon
+  results:
+  - year: 2026
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 5
+    tid: '1:33:04'
+    seconds: 5584
+    rekord: Kvinnelig løyperekord
+  slug: henriette-albon
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:33:04'
+  pers_year: 2026
+  pers_disiplin: Løping
+- navn: Ingeborg Winther Mykjåland
+  results:
+  - year: 2025
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 3
+    tid: '1:46:15'
+    seconds: 6375
+  slug: ingeborg-winther-mykjaland
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:46:15'
+  pers_year: 2025
+  pers_disiplin: Løping
+- navn: Iver Systnes Hole
+  results:
+  - year: 2026
+    disiplin_id: rulleski
+    disiplin: Rulleski
+    plass: 1
+    tid: '55:22'
+    seconds: 3322
+    note: Tiden som er ført opp er tiden fra Trollstigen-segmentet på Strava, som
+      starter ved Trollstigen Camping.
+  slug: iver-systnes-hole
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '55:22'
+  pers_year: 2026
+  pers_disiplin: Rulleski
+- navn: Jeppe Pallesen
+  results:
+  - year: 2026
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 3
+    tid: '1:26:09'
+    seconds: 5169
+  slug: jeppe-pallesen
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:26:09'
+  pers_year: 2026
+  pers_disiplin: Løping
+- navn: Kilian Jornet
+  results:
+  - year: 2024
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 1
+    tid: '1:26'
+    seconds: 5160
+  slug: kilian-jornet
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:26'
+  pers_year: 2024
+  pers_disiplin: Løping
+- navn: Knut Hodnebrog
+  results:
+  - year: 2026
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 12
+    tid: '2:44:44'
+    seconds: 9884
+    merknad: Løp sammen med Bjørn Tore Tollefsen fra start til slutt
+  slug: knut-hodnebrog
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '2:44:44'
+  pers_year: 2026
+  pers_disiplin: Løping
+- navn: Kristian Skjeflo Unhjem
+  results:
+  - year: 2026
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 1
+    tid: '1:22:18'
+    seconds: 4938
+    rekord: true
+  slug: kristian-skjeflo-unhjem
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:22:18'
+  pers_year: 2026
+  pers_disiplin: Løping
+- navn: Lars Hauff
+  results:
+  - year: 2026
+    disiplin_id: gravel
+    disiplin: Gravel
+    plass: 1
+    tid: '1:12:59'
+    seconds: 4379
+    note: Fulgte ca samme rute som løperne, men tok av til asfalten ved fellesbeitet
+      i Isterdalen og deretter opp Trollstigen.
+  slug: lars-hauff
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:12:59'
+  pers_year: 2026
+  pers_disiplin: Gravel
+- navn: Lars Tore Lesteberg
+  results:
+  - year: 2025
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 4
+    tid: Ukjent
+  slug: lars-tore-lesteberg
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+- navn: Matti Bernitz
+  results:
+  - year: 2026
+    disiplin_id: gravel
+    disiplin: Gravel
+    plass: 2
+    tid: '1:18:04'
+    seconds: 4684
+    note: Fulgte ca samme rute som løperne, men tok av til asfalten ved fellesbeitet
+      i Isterdalen og deretter opp Trollstigen.
+  slug: matti-bernitz
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:18:04'
+  pers_year: 2026
+  pers_disiplin: Gravel
+- navn: Pål Oskar Engen
+  results:
+  - year: 2026
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 10
+    tid: '1:57:42'
+    seconds: 7062
+  slug: pal-oskar-engen
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:57:42'
+  pers_year: 2026
+  pers_disiplin: Løping
+- navn: Siw Kathrine Tokle
+  results:
+  - year: 2026
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 11
+    tid: '1:58:37'
+    seconds: 7117
+  slug: siw-kathrine-tokle
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:58:37'
+  pers_year: 2026
+  pers_disiplin: Løping
+- navn: Sverre Kjerpeset
+  results:
+  - year: 2025
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 5
+    tid: '1:50:16'
+    seconds: 6616
+  slug: sverre-kjerpeset
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:50:16'
+  pers_year: 2025
+  pers_disiplin: Løping
+- navn: Thomas Berge Foyn
+  results:
+  - year: 2026
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 6
+    tid: '1:37:35'
+    seconds: 5855
+  slug: thomas-berge-foyn
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:37:35'
+  pers_year: 2026
+  pers_disiplin: Løping
+- navn: Tristan Hauff
+  results:
+  - year: 2024
+    disiplin_id: loping
+    disiplin: Løping
+    plass: "—"
+    tid: Force majeure - DNF
+    merknad: Stoppet ved Stigfossen pga veiarbeid
+  slug: tristan-hauff
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+- navn: Vegard Lund Fosland
+  results:
+  - year: 2025
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 6
+    tid: '1:52:22'
+    seconds: 6742
+  - year: 2026
+    disiplin_id: landevei
+    disiplin: Landeveissykkel
+    plass: 2
+    tid: '58:15'
+    seconds: 3495
+    note: Asfalt via Frydenlund, Brønnsletta og deretter opp Trollstigen.
+  slug: vegard-lund-fosland
+  starter: 2
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:52:22'
+  pers_year: 2025
+  pers_disiplin: Løping
+- navn: Vetle Elvebakken
+  results:
+  - year: 2026
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 8
+    tid: '1:46:42'
+    seconds: 6402
+  slug: vetle-elvebakken
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:46:42'
+  pers_year: 2026
+  pers_disiplin: Løping

@@ -11,6 +11,11 @@
       <li aria-current="page">Historie</li>
     {% elsif page.url == '/bilder/' %}
       <li aria-current="page">Bilder</li>
+    {% elsif page.utover %}
+      <li><a href="{{ '/utovere/' | relative_url }}">Utøvere</a></li>
+      <li aria-current="page">{{ page.title }}</li>
+    {% elsif page.url == '/utovere/' %}
+      <li aria-current="page">Utøvere</li>
     {% endif %}
   </ol>
 </nav>
