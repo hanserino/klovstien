@@ -50,7 +50,10 @@
           <a href="{{ '/bilder/' | relative_url }}">Bilder</a>
           <a href="{{ '/resultater/' | relative_url }}">Resultater</a>
           {% for year in site.race.years %}
-            <a href="{{ '/resultater/' | append: year | append: '/' | relative_url }}">{{ year }}</a>
+            {% assign data = site.data.resultater[year] %}
+            {% unless data.status == 'kommende' %}
+              <a href="{{ '/resultater/' | append: year | append: '/' | relative_url }}">{{ year }}</a>
+            {% endunless %}
           {% endfor %}
         </nav>
         <p>Kløvstien Open er en årlig time trial — ikke et offisielt idrettsarrangement.</p>
