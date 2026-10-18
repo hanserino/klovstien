@@ -42,47 +42,77 @@
 2026:
   title: "2026"
   status: arkiv
-  ingress: Tredje utgave. Ca 16 fullførende. Kristian Skjeflo Unhjem satte ny løyperekord på 1:22:18. Henriette Albon satte kvinnelig løyperekord på 1:33:04. Resultatlista blir oppdatert fortløpende.
+  ingress: Tredje utgave. Ca 16 fullførende til fots. Kristian Skjeflo Unhjem satte ny løyperekord på 1:22:18. Henriette Albon satte kvinnelig løyperekord på 1:33:04. Det gikk også landevei, gravel og rulleski.
   kilde_url: https://www.fjelldatabasen.no/races/klovstien-open/2026/17km
-  entries:
-    - plass: 1
-      navn: Kristian Skjeflo Unhjem
-      tid: "1:22:18"
-      rekord: true
-    - plass: 2
-      navn: Bjørnar Skjeflo Unhjem
-      tid: "1:23:25"
-    - plass: 3
-      navn: Jeppe Pallesen
-      tid: "1:26:09"
-    - plass: 4
-      navn: Hans Kristian Smedsrød Engdahl
-      tid: "1:29:32"
-    - plass: 5
-      navn: Henriette Albon
-      tid: "1:33:04"
-      rekord: Kvinnelig løyperekord
-    - plass: 6
-      navn: Thomas Berge Foyn
-      tid: "1:37:35"
-    - plass: 7
-      navn: Brynhild Systnes
-      tid: "1:42:59"
-    - plass: 8
-      navn: Vetle Elvebakken
-      tid: "1:46:42"
-    - plass: 9
-      navn: Ahmed Merdagani
-      tid: "1:47:41"
-    - plass: 10
-      navn: Pål Oskar Engen
-      tid: "1:57:42"
-    - plass: 11
-      navn: Siw Kathrine Tokle
-      tid: "1:58:37"
-    - plass: 12
-      navn: Knut Hodnebrog
-      tid: "2:44:44"
+  disipliner:
+    - id: loping
+      tittel: Løping
+      entries:
+        - plass: 1
+          navn: Kristian Skjeflo Unhjem
+          tid: "1:22:18"
+          rekord: true
+        - plass: 2
+          navn: Bjørnar Skjeflo Unhjem
+          tid: "1:23:25"
+        - plass: 3
+          navn: Jeppe Pallesen
+          tid: "1:26:09"
+        - plass: 4
+          navn: Hans Kristian Smedsrød Engdahl
+          tid: "1:29:32"
+        - plass: 5
+          navn: Henriette Albon
+          tid: "1:33:04"
+          rekord: Kvinnelig løyperekord
+        - plass: 6
+          navn: Thomas Berge Foyn
+          tid: "1:37:35"
+        - plass: 7
+          navn: Brynhild Systnes
+          tid: "1:42:59"
+        - plass: 8
+          navn: Vetle Elvebakken
+          tid: "1:46:42"
+        - plass: 9
+          navn: Ahmed Merdagani
+          tid: "1:47:41"
+        - plass: 10
+          navn: Pål Oskar Engen
+          tid: "1:57:42"
+        - plass: 11
+          navn: Siw Kathrine Tokle
+          tid: "1:58:37"
+        - plass: 12
+          navn: Knut Hodnebrog
+          tid: "2:44:44"
+    - id: landevei
+      tittel: Landeveissykkel
+      note: Via Trollstigen.
+      entries:
+        - plass: 1
+          navn: Andre Kristoffersen
+          tid: "57:09"
+        - plass: 2
+          navn: Vegard Fosland
+          tid: "58:15"
+    - id: gravel
+      tittel: Gravel
+      note: Via Trollstigen.
+      entries:
+        - plass: 1
+          navn: Lars Hauff
+          tid: Uvisst
+        - plass: 2
+          navn: Matti Bernitz
+          tid: "1:18:04"
+    - id: rulleski
+      tittel: Rulleski
+      note: Kun opp Trollstigen. Segmentet starter ved Trollstigen Camping.
+      entries:
+        - plass: 1
+          navn: Iver Systnes Hole
+          tid: "55:22"
 
 2027:
   title: "2027"

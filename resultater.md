@@ -17,8 +17,13 @@ permalink: /resultater/
         <li>
           <a href="{{ '/resultater/' | append: year | append: '/' | relative_url }}">
             {{ year }}
-            {% if data.entries and data.entries.size > 0 %}
-              {% assign winner = data.entries | where: "plass", 1 | first %}
+            {% assign winner_list = data.entries %}
+            {% if data.disipliner and data.disipliner.size > 0 %}
+              {% assign primar = data.disipliner | first %}
+              {% assign winner_list = primar.entries %}
+            {% endif %}
+            {% if winner_list and winner_list.size > 0 %}
+              {% assign winner = winner_list | where: "plass", 1 | first %}
               {% if winner %}
                 <span class="stat-note"> — {{ winner.navn }}, {{ winner.tid }}</span>
               {% endif %}

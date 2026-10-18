@@ -12,40 +12,25 @@
 
   {% if data.status == 'kommende' %}
     <p class="notice">{{ site.race.date_display }} kl. {{ site.race.time }}. Påmelding hos <a href="{{ site.race.registration_url }}" target="_blank" rel="noopener noreferrer">{{ site.race.registration_label }}</a>{% if site.race.tracking_url %} og tidtaking hos <a href="{{ site.race.tracking_url }}" target="_blank" rel="noopener noreferrer">Fjelldatabasen</a>{% endif %}. Listen her oppdateres etter løpet.</p>
-  {% else %}
   {% endif %}
 
-  {% if data.entries and data.entries.size > 0 %}
-    <div class="table-wrap">
-      <table class="results">
-        <thead>
-          <tr>
-            <th>Plass</th>
-            <th>Navn</th>
-            <th>Tid</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for row in data.entries %}
-            <tr{% if row.tid contains 'DNF' or row.tid == 'Ukjent' %} class="is-dnf"{% endif %}>
-              <td>{{ row.plass }}</td>
-              <td>
-                {{ row.navn }}
-                {% if row.rekord %}
-                  <span class="record-flag">{% if row.rekord == true %}Løyperekord{% else %}{{ row.rekord }}{% endif %}</span>
-                {% endif %}
-                {% if row.merknad %}<span class="result-note">{{ row.merknad }}</span>{% endif %}
-              </td>
-              <td>{{ row.tid }}</td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
-    {% if data.kilde_url %}
-      <p>Full resultatliste hos <a href="{{ data.kilde_url }}" target="_blank" rel="noopener noreferrer">Fjelldatabasen</a>.</p>
-    {% endif %}
+  {% if data.disipliner and data.disipliner.size > 0 %}
+    {% for disiplin in data.disipliner %}
+      <section class="result-discipline"{% if disiplin.id %} aria-labelledby="disiplin-{{ disiplin.id }}"{% endif %}>
+        <h2{% if disiplin.id %} id="disiplin-{{ disiplin.id }}"{% endif %} class="result-discipline-title">{{ disiplin.tittel }}</h2>
+        {% if disiplin.note %}
+          <p class="result-discipline-note">{{ disiplin.note }}</p>
+        {% endif %}
+        {% include resultat-tabell.html entries=disiplin.entries %}
+      </section>
+    {% endfor %}
+  {% elsif data.entries and data.entries.size > 0 %}
+    {% include resultat-tabell.html entries=data.entries %}
   {% else %}
     <p class="empty-results">Ingen tider er publisert her ennå. Når listen er klar, kommer den på denne siden.{% if site.race.tracking_url %} Fram til da er <a href="{{ site.race.tracking_url }}" target="_blank" rel="noopener noreferrer">Fjelldatabasen</a> stedet for tidtaking.{% endif %}</p>
+  {% endif %}
+
+  {% if data.kilde_url %}
+    <p>Full resultatliste for løping hos <a href="{{ data.kilde_url }}" target="_blank" rel="noopener noreferrer">Fjelldatabasen</a>.</p>
   {% endif %}
 </article>

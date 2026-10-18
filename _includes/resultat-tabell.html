@@ -1,0 +1,30 @@
+{% if include.entries and include.entries.size > 0 %}
+  <div class="table-wrap">
+    <table class="results">
+      <thead>
+        <tr>
+          <th>Plass</th>
+          <th>Navn</th>
+          <th>Tid</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in include.entries %}
+          <tr{% if row.tid contains 'DNF' or row.tid == 'Ukjent' or row.tid == 'Uvisst' %} class="is-dnf"{% endif %}>
+            <td>{{ row.plass }}</td>
+            <td>
+              {{ row.navn }}
+              {% if row.rekord %}
+                <span class="record-flag">{% if row.rekord == true %}Løyperekord{% else %}{{ row.rekord }}{% endif %}</span>
+              {% endif %}
+              {% if row.merknad %}<span class="result-note">{{ row.merknad }}</span>{% endif %}
+            </td>
+            <td>{{ row.tid }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% else %}
+  <p class="empty-results">Tider kommer.</p>
+{% endif %}
