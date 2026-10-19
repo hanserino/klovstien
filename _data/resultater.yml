@@ -89,11 +89,11 @@
         - plass: 13
           navn: Knut Hodnebrog
           tid: "2:44:44"
-          merknad: Løp sammen med Bjørn Tore Tollefsen fra start til slutt
+          merknad: Delt tid og plassering med Bjørn Tore Tollefsen
         - plass: 13
           navn: Bjørn Tore Tollefsen
           tid: "2:44:44"
-          merknad: Løp sammen med Knut Hodnebrog fra start til slutt
+          merknad: Delt tid og plassering med Knut Hodnebrog
     - id: landevei
       tittel: Landeveissykkel
       note: Asfalt via Frydenlund, Brønnsletta og deretter opp Trollstigen.
