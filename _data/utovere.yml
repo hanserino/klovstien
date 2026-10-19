@@ -3,7 +3,7 @@
   - year: 2026
     disiplin_id: loping
     disiplin: Løping
-    plass: 9
+    plass: 10
     tid: '1:47:41'
     seconds: 6461
   slug: ahmed-merdagani
@@ -38,7 +38,7 @@
   - year: 2026
     disiplin_id: loping
     disiplin: Løping
-    plass: 12
+    plass: 13
     tid: '2:44:44'
     seconds: 9884
     merknad: Løp sammen med Knut Hodnebrog fra start til slutt
@@ -227,7 +227,7 @@
   - year: 2026
     disiplin_id: loping
     disiplin: Løping
-    plass: 12
+    plass: 13
     tid: '2:44:44'
     seconds: 9884
     merknad: Løp sammen med Bjørn Tore Tollefsen fra start til slutt
@@ -256,6 +256,23 @@
   - 2025
   - 2026
   pers_tid: '1:22:18'
+  pers_year: 2026
+  pers_disiplin: Løping
+- navn: Lars Gaute
+  results:
+  - year: 2026
+    disiplin_id: loping
+    disiplin: Løping
+    plass: 8
+    tid: '1:45:46'
+    seconds: 6346
+  slug: lars-gaute
+  starter: 1
+  akse_aar:
+  - 2024
+  - 2025
+  - 2026
+  pers_tid: '1:45:46'
   pers_year: 2026
   pers_disiplin: Løping
 - navn: Lars Hauff
@@ -314,7 +331,7 @@
   - year: 2026
     disiplin_id: loping
     disiplin: Løping
-    plass: 10
+    plass: 11
     tid: '1:57:42'
     seconds: 7062
   slug: pal-oskar-engen
@@ -331,7 +348,7 @@
   - year: 2026
     disiplin_id: loping
     disiplin: Løping
-    plass: 11
+    plass: 12
     tid: '1:58:37'
     seconds: 7117
   slug: siw-kathrine-tokle
@@ -420,7 +437,7 @@
   - year: 2026
     disiplin_id: loping
     disiplin: Løping
-    plass: 8
+    plass: 9
     tid: '1:46:42'
     seconds: 6402
   slug: vetle-elvebakken
